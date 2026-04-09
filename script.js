@@ -4,12 +4,12 @@ const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-const words = "Disculpa CorazÓN";
+const words = "Disculpa Corazon";
 const particles = [];
 
 // Ajustes de diseño
 const particleCount = 150; 
-const heartSize = 20; // Tamaño ideal para móvil y PC
+const heartSize = 25; // Tamaño ideal para móvil y PC
 
 function drawHeart(t) {
     const x = 16 * Math.pow(Math.sin(t), 3);
