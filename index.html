@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ti</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        canvas {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="heartCanvas"></canvas>      
+
+    <audio id="backgroundMusic" preload="auto" loop>
+        <source src="arrullo.mp3" type="audio/mpeg">
+        Tu navegador no soporta el audio.
+    </audio>
+
+    <div id="controls" style="position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); z-index: 100;">
+        <button id="musicBtn" style="
+            background: rgba(255, 0, 0, 0.1); 
+            border: 2px solid #FF0000; 
+            color: #FF0000; 
+            cursor: pointer; 
+            padding: 12px 25px; 
+            border-radius: 30px; 
+            font-weight: bold;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+            transition: all 0.3s ease;
+        ">
+            ✨ Iniciar cancion ✨
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
